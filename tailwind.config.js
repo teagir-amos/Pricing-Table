@@ -4,13 +4,15 @@ module.exports = {
   theme: {
     extend: {
       screens:{
-        'phone': '375px',
+        'sm': {"max" : "375px"},
       // => @media (min-width: 375px) { ... }
 
-      'laptop': '1024px',
+      'md': '{"min" : "376px", "max" : "768px"}',
+
+      'lg': '{"min" : 768"px", "max" : "1024px"}',
       // => @media (min-width: 1024px) { ... }
 
-      'desktop': '1280px',
+      'xl': '{"min" : "1024px", "max" : "1280px"}',
       // => @media (min-width: 1280px) { ... }
       }
     },
